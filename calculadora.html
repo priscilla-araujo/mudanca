@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudanças Rápidas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Menu principal">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">Mudanças Rápidas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./quemSomos.html">Quem Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="./servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Calculadora</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="conteudo-principal">
+    <!-- HERO -->
+    <section class="hero" aria-label="Introdução">
+      <div class="container">
+        <h1>Faça aqui sua simulação</h1>
+      </div>
+    </section>
+
+    <!-- CALCULADORA -->
+  <section id="calculadora" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+      <h2 class="mb-4 text-center">Calculadora de Orçamento</h2>
+      <form id="formCalc" class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="comodos" class="form-label">Quantidade de cômodos</label>
+          <input type="number" class="form-control" id="comodos" min="1" required>
+        </div>
+        <div class="mb-3">
+          <label for="distancia" class="form-label">Distância (km)</label>
+          <input type="number" class="form-control" id="distancia" min="1" required>
+        </div>
+        <div class="mb-3">
+          <label for="montagem" class="form-label">Necessita montagem/desmontagem?</label>
+          <select id="montagem" class="form-select">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+        </div>
+        <div class="text-center mt-4">
+          <button type="button" class="btn btn-primary" onclick="calcularMudanca()">Calcular</button>
+        </div>
+      </form>
+      <div class="mt-4 text-center">
+        <h4>Resultado:</h4>
+        <p id="resultado" class="alert alert-info d-inline-block" role="alert" style="max-width: 400px;">
+          Preencha os campos e clique em "Calcular".
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- RODAPÉ -->
+  <footer class="text-center" aria-label="Rodapé">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Mudanças Rápidas. Todos os direitos reservados.</p>
+      <p>Contato: (+351) 999 999 999 | contato@mudancasrapidas.pt</p>
+      <p>
+        <a href="https://www.linkedin.com/in/priscilla-araujo-30a742165/" target="_blank" class="text-white text-decoration-underline">
+          Priscilla Araujo
+        </a>
+      </p>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
